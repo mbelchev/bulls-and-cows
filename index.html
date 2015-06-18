@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bulls and Cows</title>
+		<!-- Other meta tags ... -->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1 class="text-center"><a href="index.html" class="site-logo">Bulls and Cows</a></h1>
+			</header>
+
+			<section class="carousel" id="new_game">
+				<div class="main text-center carousel-inner">
+					<div class="item active">
+						<h4 class="label">Select Level:</h4>
+						<select id="game-level">
+							<option>3</option>
+							<option selected="selected">4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+						</select>
+						<a href="#new_game" onclick="startGame()" class="menu-item" data-slide-to="1">Start Game</a>
+					</div>
+
+					<div class="item">
+						<h4 class="label">Enter number:</h4>
+						<form method="post" onsubmit="return false;">
+							<input type="text" class="input-text" id="guess-number" autocomplete="off" />
+							<button class="ok-button" onclick="setNumber()">ОК</button>
+						</form>
+						<div class="text-centered" id="error"></div>
+						<table id="game-main">
+							<thead class="first">
+								<td>Move</td>
+								<td>Number</td>
+								<td>Cows</td>
+								<td>Bulls</td>
+							</thead>
+							<tbody id="game-main-body"></tbody>						
+						</table>
+						<div class="text-centered" id="ok"></div>
+						<a href="#" class="menu-item" id="cleanTable" onclick="cleanTable()">Clean board / Reset moves</a>
+						<a href="#" class="menu-item" id="status" onclick="status()">Show status</a>
+						<a href="#" class="menu-item" id="help" onclick="help()">Help</a>
+						<a href="#" class="menu-item" id="surrender" onclick="surrender()">Surrender</a>
+						<a href="#new_game" class="menu-item-revert" onclick="restart()" data-slide-to="0">New Game</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Javascripts -->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+	</body>
+</html>

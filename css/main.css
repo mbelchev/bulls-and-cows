@@ -1,0 +1,46 @@
+@font-face {font-family: 'Logo Font'; src: url(../fonts/BadScript-Regular.ttf);}
+
+* {padding: 0; margin: 0;}
+*:hover {-webkit-transition: all 0.8s ease; -moz-transition: all 0.8s ease; -ms-transition: all 0.8s ease; -o-transition: all 0.8s ease; transition: all 0.8s ease;}
+div:empty {display:none;}
+a {color: #1281b9; text-decoration: none;}
+ul, li {list-style: none;}
+
+body {background: #E9EAED; width: 100%; height: 100%; font-family: Verdana, sans-serif; font-size: 13px; color: #777; padding: 50px 0;}
+
+#wrap {width: 50%; margin: 0 auto;}
+
+header .site-logo {font-family: 'Logo Font', sans-serif; font-size: 30px; color: #1281b9;}
+
+.main {width: 45%; margin: 0 auto;}
+
+.label {padding: 5px 0;}
+#game-level {background: #1281b9; width: 100%; height: 35px; line-height: 35px; border-radius: 5px; color: #FFF; font-size: 15px; font-weight: bold; text-indent: 10px; }
+#game-main {width:100%; margin: 15px 0 30px 0;}
+#game-main td {color: #FFF; padding: 5px 0; font-size: 12px;}
+/*#game-main .first {background: #444 !important;}*/
+#game-main thead tr:first-child {background: #444 !important;}
+#game-main thead tr:first-child td:first-child {border-radius: 5px 0 0 0;}
+#game-main thead tr:first-child td:last-child {border-radius: 0 5px 0 0;}
+#game-main tr:last-child td:first-child {border-radius: 0 0 0 5px;}
+#game-main tr:last-child td:last-child {border-radius: 0 0 5px 0;}
+#game-main tr:nth-child(even) {background: #319ace;}
+#game-main tr:nth-child(even):hover {background: #1281b9;}
+#game-main tr:nth-child(odd) {background: #1281b9;}
+#game-main tr:nth-child(odd):hover {background: #319ace;}
+
+.menu-item {background: #1281b9; border-radius: 5px; padding: 10px 15px; color: #FFF; font-weight: bold; margin: 10px 0; display: block;}
+.menu-item:hover {background: #444;}
+
+.input-text {height: 20px; border: 1px solid #777; border-radius: 5px 0px 0px 5px; padding: 5px 10px; outline: none;}
+.ok-button {background: #1281b9; height: 30px; border: 1px solid #1281b9; border-radius: 0px 5px 5px 0px; color: #FFF; font-weight: bold; display: inline-block; padding: 0 10px; outline: none;}
+
+#error {background: #FFBABA; width: 96%; border: 1px solid #D8000C; border-radius: 5px; color: #D8000C; padding: 10px 5px; margin-top: 20px;}
+#ok {background: #DFF2BF; width: 96%; border: 1px solid #4F8A10; border-radius: 5px; color: #4F8A10; padding: 10px 5px; margin-bottom: 20px;}
+
+.menu-item-revert {background: #444; border-radius: 5px; padding: 10px 15px; color: #FFF; font-weight: bold; display: block;}
+.menu-item-revert:hover {background: #1281b9;}
+
+/* other */
+.text-center {text-align: center;}
+.text-bold {font-weight: bold;}
